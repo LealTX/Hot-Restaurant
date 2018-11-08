@@ -68,6 +68,7 @@
 
       </div>
     </div>
+ 
 
 
     <footer class="footer">
@@ -107,7 +108,7 @@
       // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
       // depending on if a tables is available or not.
 
-      $.post("/api/tables", newReservation,
+      $.post("/api/reservations", newReservation,
         function(data) {
 
           // If a table is available... tell user they are booked.
